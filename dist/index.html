@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Consent data string decoder</title>
+        <style>
+            body { font-family: 'Sans-Serif'; }
+            label { display: flex; }
+            input { margin-left: .2em; flex-grow: 1; }
+            .output { border: 1px dashed black; background-color: #EEE; min-height: 1em; }
+            .error { color: red; }
+        </style>
+    </head>
+    <body>
+        <h1>Consent data string decoder</h1>
+
+        <p>That tool help you decode and understand what is stored by <abbr description="Consent Manager Provider">CMP</abbr> as defined by <a href="http://advertisingconsent.eu">IAB Europe</a>.
+
+        <h2>Enter your consent data string (generated from a CMP)</h2>
+        <label>Consent data : <input type="text" placeholder="enter your base64 content data string here"></label>
+        <p>Here’s a « demo » consent data string : BOPpXYgOPpXYgAAABBFRBC-AAAAcR7_______9______9uz_Gv_r_f__33e8_39v_h_7_-___m_-3zV4-_1vV11yPg1urfIr1NpjQ6OGgA</p>
+
+        <h2>Decoded consent data string</h2>
+        <pre class="output"></pre>
+        <script src="./main.js"></script>
+    <script type="text/javascript" src="main.js"></script></body>
+</html>
