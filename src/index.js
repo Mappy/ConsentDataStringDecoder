@@ -9,7 +9,7 @@ const decode =  (e) => {
         if (!input.value) {
             output.textContent = 'Nothing to decode'
         } else {
-            const consent = new ConsentString(input.value.replace('"', ''))
+            const consent = new ConsentString(input.value.replace(/"/g, ''))
             output.textContent = JSON.stringify(consent, null, 2)
         }
     } catch (e) {
