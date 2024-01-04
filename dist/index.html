@@ -1,26 +1,6 @@
-<DOCTYPE html>
-<html>
-    <head>
-        <title>Consent data string decoder</title>
-        <style>
-            body { font-family: 'Sans-Serif'; }
+<doctype html><html><head><title>Consent data string decoder</title><style>body { font-family: 'Sans-Serif'; }
             label { display: flex; }
             input { margin-left: .2em; flex-grow: 1; }
             .output { border: 1px dashed black; background-color: #EEE; min-height: 1em; }
             .error { color: red; }
-        </style>
-    </head>
-    <body>
-        <h1>Consent data string decoder</h1>
-
-        <p>That tool help you decode and understand what is stored by <abbr description="Consent Manager Provider">CMP</abbr> as defined by <a href="http://advertisingconsent.eu">IAB Europe</a>.
-
-        <h2>Enter your consent data string (generated from a CMP)</h2>
-        <label>Consent data : <input type="text" placeholder="enter your base64 content data string here"></label>
-        <p>Here’s a « demo » consent data string : BOPpXYgOPpXYgAAABBFRBC-AAAAcR7_______9______9uz_Gv_r_f__33e8_39v_h_7_-___m_-3zV4-_1vV11yPg1urfIr1NpjQ6OGgA</p>
-
-        <h2>Decoded consent data string</h2>
-        <pre class="output"></pre>
-        <script src="./main.js"></script>
-    <script type="text/javascript" src="main.js"></script></body>
-</html>
+            .deprecated { font-weight: bold; background-color: lightyellow; border: 2px solid orange; padding: .1em; }</style><script defer="defer" src="main.js"></script></head><body><h1>Consent data string decoder</h1><p>That tool help you decode and understand what is stored by <abbr description="Consent Manager Provider">CMP</abbr> as defined by IAB Europe.</p><p class="deprecated">⚠️ That tool is deprecated since it works only for TCF v1, now obsolete. You could now use <a href="https://iabtcf.com/#/decode">iabtcf.com</a></p><p>You can find the <a href="https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md#where-can-i-access-the-global-vendor-list">vendorlist on the GDPR Transparency and Consent Framework repository</a>.</p><h2>Enter your consent data string (generated from a CMP)</h2><label>Consent data : <input class="input" placeholder="enter your base64 content data string here"></label><p>Here’s a « demo » consent data string : BOPpXYgOPpXYgAAABBFRBC-AAAAcR7_______9______9uz_Gv_r_f__33e8_39v_h_7_-___m_-3zV4-_1vV11yPg1urfIr1NpjQ6OGgA</p><h2>Decoded consent data string</h2><pre class="output"></pre><script src="./main.js"></script></body></html></doctype>
